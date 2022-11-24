@@ -22,10 +22,18 @@ function MovieForm() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((newMovie) => console.log(newMovie));
+    }).then((response) => console.log(response));
   }
+  //   fetch("/movies", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(formData),
+  //   })
+  //     .then((response) => response.json())
+  //     .then((newMovie) => console.log(newMovie));
+  // }
 
   function handleChange(e) {
     const value =
